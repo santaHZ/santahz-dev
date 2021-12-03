@@ -7,10 +7,14 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <p class="announcement-bar__message h5">
+<<<<<<< HEAD
                 {% comment %}
                    {{ block.settings.text | escape }}
                 {% endcomment %}
                 Dear Client, Welcome to our store.
+=======
+                {{ block.settings.text }}
+>>>>>>> c846af6352b343411da0de268ca174e21b041b7d
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
