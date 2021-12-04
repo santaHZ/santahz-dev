@@ -18,7 +18,7 @@
         "subtitle": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "{{ product.metafields.my_fields.brand.value }}",
             "text_style": "subtitle"
           }
         },
