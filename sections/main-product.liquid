@@ -8,8 +8,10 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'product-extra-info.css' | asset_url }}" type="text/css">
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-extra-info.js' | asset_url }}" defer="defer"></script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
@@ -197,6 +199,8 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            <h1>This is customized content</h1>
+            {{ product.title }}
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -364,6 +368,67 @@
         {%- endfor -%}
       </div>
     </div>
+    <div id="product-extra-info">
+      <h1>Show or hide product list</h1>
+      <div><input type="button" id="toggleBtn" onclick="toggleShow()" name="Toggle" value="Toggle"></div>
+      <div id="toggleA" onclick="toggleShow()">Expand</div>
+      <div id="product_data" style="background-color: lightgray; height: 177px; display: block; overflow: hidden;">
+        <p>Product List</p>
+        <hr>
+        <ul>
+          <li class="product_list_head">Name</li>
+          <li>SKYLARK(yellow)</li>
+          <li>I am good. What about you?</li>
+          <li>I am good. What about you?</li>
+          <li>I am good. What about you?</li>
+        </ul>
+        <ul>
+          <li class="product_list_head">Frame</li>
+          <li>16 inch aluminum alloy frame</li>
+          <li>I am good. What about you?</li>
+          <li>I am good. What about you?</li>
+          <li>I am good. What about you?</li>
+        </ul>
+        <ul>
+          <li class="product_list_head">Motor</li>
+          <li>250~400W</li>
+        </ul>
+        <ul>
+          <li class="product_list_head">Battery</li>
+          <li>36V 10AH/48V10AH Lithium battery</li>
+        </ul>
+        <ul>
+          <li class="product_list_head">Brake</li>
+          <li>Front drum brake and rear disc brake</li>
+        </ul>
+        <ul>
+          <li class="product_list_head">Wheel Hub</li>
+          <li>Magnesium alloy wheel</li>
+        </ul>
+      </div>
+      <p id="spe_Tech_Menu" onclick="speToggle()">- Technology</p>
+      <div id="spe_Tech" style="height: 350px;">
+        <ul style="width:50px;"></ul>
+        <ul>
+          <li class="rtBoder1px btBoder1px topBoder1px">Motor</li>
+          <li class="rtBoder1px btBoder1px">Pedal Assist Levels</li>
+          <li class="rtBoder1px btBoder1px">Display</li>
+          <li class="rtBoder1px btBoder1px">Battery</li>
+          <li class="rtBoder1px btBoder1px">Dive Mode</li>
+        </ul>
+        <ul>
+          <li class="btBoder1px topBoder1px">40Nm / 250W motor</li>
+          <li class="btBoder1px">1 level</li>
+          <li class="btBoder1px">LCD display</li>
+          <li class="btBoder1px">Tianneng 48V/12A, removable, supports up to 22 miles</li>
+          <li class="btBoder1px">Pedal-assist and full twist throttle</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
   </div>
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
