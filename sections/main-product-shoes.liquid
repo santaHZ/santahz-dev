@@ -370,14 +370,13 @@
     </div>
     <div id="product-extra-info">
       <h1>Show or hide product list</h1>
-      <div><input type="button" id="toggleBtn" onclick="toggleShow()" name="Toggle" value="Toggle"></div>
       <div id="toggleA" onclick="toggleShow()">Expand</div>
       <div id="product_data" style="background-color: lightgray; height: 177px; display: block; overflow: hidden;">
         <p>Product List</p>
         <hr>
         <ul>
           <li class="product_list_head">Name</li>
-          <li>SKYLARK(yellow)</li>
+          <li>{{ product.title }}</li>
           <li>I am good. What about you?</li>
           <li>I am good. What about you?</li>
           <li>I am good. What about you?</li>
