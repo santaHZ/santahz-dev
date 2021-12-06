@@ -1,45 +1,6 @@
 console.log('I am a center of the universe.')
 let myString = "Hello World~!";
 console.log(myString);
-console.log(2+6);
-
-let divHeight = 300;
-
-function incHeight(){
-	let elem= document.getElementById("product_data"); //can only define html element inside function
-	divHeight += 2;
-	elem.style.height = divHeight + "px";
-	if (divHeight < 450){
-		setTimeout(incHeight, 5);
-	}
-}
-
-function decHeight(){
-	//can only define html element inside function
-	let elem= document.getElementById("product_data"); 
-	divHeight -= 2;
-	elem.style.height = divHeight + "px";
-	if (divHeight > 300){
-		setTimeout(decHeight, 5);
-	}
-}
-
-let toggleShow = function() {
-	//let btnText = document.getElementById("toggleBtn");
-	let btnA= document.getElementById("toggleA");
-	//console.log(btnText.value);
-	console.log(btnA.innerHTML);
-	if (btnA.innerHTML == "Expand"){
-		setTimeout(incHeight, 5);
-		console.log(divHeight);
-		btnA.innerHTML = "Shrink";
-	}else{
-		setTimeout(decHeight, 5);
-		console.log(divHeight);
-		btnA.innerHTML = "Expand";
-	}
-}
-
 
 // following is the block for specification
 
@@ -66,9 +27,10 @@ function decSpeHeight(){
 	}
 }
 
-let speToggle = function() {
+let speToggle = function(event) {
 	//let btnText = document.getElementById("toggleBtn");
-	let btnA= document.getElementById("spe_Tech_Menu");
+	//let btnA= document.getElementById("spe_Tech_Menu");
+	let btnA = document.elementsFromPoint(event.clientX, event.clientY);
 	//console.log(btnText.value);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
