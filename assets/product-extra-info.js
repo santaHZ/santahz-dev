@@ -31,6 +31,12 @@ let speToggle = function(id) {
 	//let btnText = document.getElementById("toggleBtn");
 	let btnA= document.getElementById(id);
 
+	let sibling = btnA.parentNode.childNodes;
+
+	for (var i=0; i<sibling.length; i++){
+		console.log(sibling[i], sibling[i].nodeType);
+	}
+
 	//console.log(btnText.value);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
