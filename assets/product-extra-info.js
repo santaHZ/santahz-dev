@@ -18,12 +18,12 @@ function incSpeHeight(id){
 	}
 }
 
-function decSpeHeight(id){
-	let elem = document.getElementById(id);
+function decSpeHeight(){
+	let elem = document.getElementById();
 	divSpeHeight -= 5;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight > 5){
-		setTimeout(decSpeHeight(id), 3);
+		setTimeout(decSpeHeight(), 3);
 	}
 }
 
@@ -37,14 +37,14 @@ let speToggle = function(id) {
 	//	console.log(sibling[i], sibling[i].nodeType);
 	//}
 
-	//console.log(btnText.value);
+	console.log(sibling_id);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
-		setTimeout(incSpeHeight(sibling_id), 3);
+		setTimeout(incSpeHeight(), 3);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "- Technology";
 	}else{
-		setTimeout(decSpeHeight(sibling_id), 3);
+		setTimeout(decSpeHeight(), 3);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "+ Technology";
 	}
