@@ -9,12 +9,12 @@ let divSpeHeight = 350;
 //let divSpeHeightMax = window.getComputedStyle(divSpeTech).getPropertyValue('height');
 //console.log(divSpeHeightMax);
 
-function incSpeHeight(id){
-	let elem = document.getElementById(id);
+function incSpeHeight(){
+	let elem = document.getElementById();
 	divSpeHeight += 5;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight < 350){
-		setTimeout(incSpeHeight(id), 3);
+		setTimeout(incSpeHeight(), 3);
 	}
 }
 
@@ -27,9 +27,9 @@ function decSpeHeight(){
 	}
 }
 
-let speToggle = function(id) {
+let speToggle = function(myId) {
 	//let btnText = document.getElementById("toggleBtn");
-	let btnA= document.getElementById(id);
+	let btnA= document.getElementById(myId);
 
 	let sibling_id = btnA.parentNode.childNodes[2].id;
 
