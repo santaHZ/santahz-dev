@@ -9,21 +9,21 @@ let divSpeHeight = 350;
 //let divSpeHeightMax = window.getComputedStyle(divSpeTech).getPropertyValue('height');
 //console.log(divSpeHeightMax);
 
-function incSpeHeight(){
-	let elem = document.getElementById("spe_Tech");
+function incSpeHeight(id){
+	let elem = document.getElementById(id);
 	divSpeHeight += 5;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight < 350){
-		setTimeout(incSpeHeight, 3);
+		setTimeout(incSpeHeight(id), 3);
 	}
 }
 
-function decSpeHeight(){
-	let elem = document.getElementById("spe_Tech");
+function decSpeHeight(id){
+	let elem = document.getElementById(id);
 	divSpeHeight -= 5;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight > 5){
-		setTimeout(decSpeHeight, 3);
+		setTimeout(decSpeHeight(id), 3);
 	}
 }
 
@@ -31,20 +31,20 @@ let speToggle = function(id) {
 	//let btnText = document.getElementById("toggleBtn");
 	let btnA= document.getElementById(id);
 
-	let sibling = btnA.parentNode.childNodes;
+	let sibling_id = btnA.parentNode.childNodes[2].id;
 
-	for (var i=0; i<sibling.length; i++){
-		console.log(sibling[i], sibling[i].nodeType);
-	}
+	//for (var i=0; i<sibling.length; i++){
+	//	console.log(sibling[i], sibling[i].nodeType);
+	//}
 
 	//console.log(btnText.value);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
-		setTimeout(incSpeHeight, 3);
+		setTimeout(incSpeHeight(sibling_id), 3);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "- Technology";
 	}else{
-		setTimeout(decSpeHeight, 3);
+		setTimeout(decSpeHeight(sibling_id), 3);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "+ Technology";
 	}
