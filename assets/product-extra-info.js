@@ -1,6 +1,4 @@
 console.log('I am a center of the universe.')
-let myString = "Hello World~!";
-console.log(myString);
 
 // following is the block for specification
 
