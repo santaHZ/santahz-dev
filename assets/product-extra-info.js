@@ -27,10 +27,10 @@ function decSpeHeight(){
 	}
 }
 
-let speToggle = function(event) {
+let speToggle = function(id) {
 	//let btnText = document.getElementById("toggleBtn");
-	//let btnA= document.getElementById("spe_Tech_Menu");
-	let btnA = document.elementsFromPoint(event.clientX, event.clientY);
+	let btnA= document.getElementById(id);
+
 	//console.log(btnText.value);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
