@@ -26,8 +26,8 @@ function decSpeHeight(){
 let speToggle = function(myId) {
 	//let btnText = document.getElementById("toggleBtn");
 	let btnA= document.getElementById(myId);
-	let sibling_id = btnA.nextElementSibling.id;
-	elementAdj = btnA.nextElementSibling.id;
+	//let sibling_id = btnA.nextElementSibling.id;
+	//elementAdj = btnA.nextElementSibling.id;
 
 	console.log(sibling_id);
 	console.log(btnA.innerHTML);
