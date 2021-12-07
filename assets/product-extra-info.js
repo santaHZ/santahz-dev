@@ -1,48 +1,42 @@
 console.log('I am a center of the universe.')
+console.log('Hello World.')
 
 // following is the block for specification
-
 let divSpeHeight = 350;
-//let divSpeTech = document.getElementById("spe_Tech");
-//let divSpeHeightMax = window.getComputedStyle(divSpeTech).getPropertyValue('height');
-//console.log(divSpeHeightMax);
+let elementAdj = "spe_Tech";
 
 function incSpeHeight(){
-	let elem = document.getElementById();
-	divSpeHeight += 5;
+	let elem = document.getElementById("spe_Tech");
+	divSpeHeight += 1;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight < 350){
-		setTimeout(incSpeHeight(), 3);
+		setTimeout(incSpeHeight(), 50);
 	}
 }
 
 function decSpeHeight(){
-	let elem = document.getElementById();
-	divSpeHeight -= 5;
+	let elem = document.getElementById("spe_Tech");
+	divSpeHeight -= 1;
 	elem.style.height = divSpeHeight + "px";
-	if (divSpeHeight > 5){
-		setTimeout(decSpeHeight(), 3);
+	if (divSpeHeight > 1){
+		setTimeout(decSpeHeight(), 50);
 	}
 }
 
 let speToggle = function(myId) {
 	//let btnText = document.getElementById("toggleBtn");
 	let btnA= document.getElementById(myId);
-
-	let sibling_id = btnA.parentNode.childNodes[2].id;
-
-	//for (var i=0; i<sibling.length; i++){
-	//	console.log(sibling[i], sibling[i].nodeType);
-	//}
+	let sibling_id = btnA.nextElementSibling.id;
+	elementAdj = btnA.nextElementSibling.id;
 
 	console.log(sibling_id);
 	console.log(btnA.innerHTML);
 	if (btnA.innerHTML == "+ Technology"){
-		setTimeout(incSpeHeight(), 3);
+		setTimeout(incSpeHeight(), 50);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "- Technology";
 	}else{
-		setTimeout(decSpeHeight(), 3);
+		setTimeout(decSpeHeight(), 50);
 		console.log(divSpeHeight);
 		btnA.innerHTML = "+ Technology";
 	}
