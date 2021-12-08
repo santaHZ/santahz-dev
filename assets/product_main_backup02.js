@@ -4,12 +4,8 @@ let objArray = [];
 let t = 0;
 let childBtn ="add";
 let divFlag = 0;
-let divDirectionFlag = "inc";
 
 function incSpeHeightMain(){
-    if (divFlag = 1 && divDirectionFlag == "dec"){
-        return;
-    }
 	let elem = document.getElementById(div_Id);
     let elemHeight =elem.scrollHeight;
 	divSpeHeight += 5;
@@ -17,20 +13,15 @@ function incSpeHeightMain(){
 	if (divSpeHeight < elemHeight){
         t = setTimeout(incSpeHeightMain, 5);
 	}
-    
 }
 
 function decSpeHeightMain(){
-    if (divFlag = 1 && divDirectionFlag == "inc"){
-        return;
-    }
 	let elem = document.getElementById(div_Id);
 	divSpeHeight -= 5;
 	elem.style.height = divSpeHeight + "px";
 	if (divSpeHeight > 5){
         t = setTimeout(decSpeHeightMain, 5);
 	}
-    
 }
 
 let speToggleMain = function(obj_Id) {
@@ -62,9 +53,7 @@ let speToggleMain = function(obj_Id) {
 		console.log(divSpeHeight);
 		btnA.firstElementChild.setAttribute("class","minus");
         childBtn = "minus";
-        divDirectionFlag = "inc";
         setTimeout(incSpeHeightMain, 5);
-        
 	}else{
         if (objArray.length == 2){
             if (objArray[0] != objArray[1]){
@@ -78,8 +67,6 @@ let speToggleMain = function(obj_Id) {
 		console.log(divSpeHeight);
 		btnA.firstElementChild.setAttribute("class","add");
         childBtn = "add";
-        divDirectionFlag = "dec";
         setTimeout(decSpeHeightMain, 5);
-        
 	}
 }
