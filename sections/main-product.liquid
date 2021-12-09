@@ -201,8 +201,6 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-            <h1>This is customized content</h1>
-            {{ product.title }}
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -376,7 +374,7 @@
     <div class="tabRoundCorner"><ul><li></li></ul></div>
     <div class="bigMenuStyle" >Geometry</div>
 		<div style="width: 200px; height: 80px;">
-			<div id="tabBtn1" class="tabBtn" onclick="divShowLeft()" style="padding: 0px; margin: 0px; background-color: #FFDD20; cursor: pointer;">
+			<div id="tabBtn1" class="tabBtn" onclick="divShowLeft()" style="padding: 0px; margin: 0px; background-color: rgb(214, 216, 215); cursor: pointer;">
 				<ul style="padding: 0px; margin: 0px; width: 100px; background-color: white; margin-bottom: 5px; list-style: none;">
 					<li class="textTabBtn1">Overall</li>
 				</ul>

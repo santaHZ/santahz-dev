@@ -10,7 +10,7 @@ tabDivLeft.style.display = "block";
 tabDivRight.style.display = "none";
 
 let divShowLeft = function(){
-	tabBtn1.style.backgroundColor = "#FFDD20";
+	tabBtn1.style.backgroundColor = "rgb(214, 216, 215)";
 	tabBtn2.style.backgroundColor = "#FFFFFF";
 
 	tabDivLeft.style.display = "block";
@@ -19,7 +19,7 @@ let divShowLeft = function(){
 
 let divShowRight = function(){
 	tabBtn1.style.backgroundColor = "#FFFFFF";
-	tabBtn2.style.backgroundColor = "#FFDD20";
+	tabBtn2.style.backgroundColor = "rgb(214, 216, 215)";
 
 	tabDivLeft.style.display = "none";
 	tabDivRight.style.display = "block";
