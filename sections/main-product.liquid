@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{ 'tabBtn.css' | asset_url }}" type="text/css">
 <link rel="stylesheet" href="{{ 'userfriendly.css' | asset_url }}" type="text/css">
 <link rel="stylesheet" href="{{ 'flexibility.css' | asset_url }}" type="text/css">
+<link rel="stylesheet" href="{{ 'performance.css' | asset_url }}" type="text/css">
 
 <script src="https://kit.fontawesome.com/c9849960bd.js" crossorigin="anonymous" defer="defer"></script>
 
@@ -20,6 +21,7 @@
 <script src="{{ 'tabBtn.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'userfriendly.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'flexibility.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'performance.js' | asset_url }}" defer="defer"></script>
 
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -28,7 +30,7 @@
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
+<div class="single-article"><hr></div>
 <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
@@ -377,6 +379,100 @@
     </div>
   </div>
 
+  <div class="main_top_banner">
+    <ul>
+      <li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/main_top_1.png?v=1639141246" width="50" height="50" loading="lazy"></li>
+      <li class="main_top_bold">Motor</li>
+      <li class="main_top_light">500W brushless geared hub motor with max torque of up to 52Nm</li>
+    </ul>
+    <ul>
+      <li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/main_top_2.png?v=1639141246" width="50" height="50" loading="lazy"></li>
+      <li class="main_top_bold">Range</li>
+      <li class="main_top_light">A fully charged battery can last up to 22 miles and 4 hours to juice up fully</li>
+    </ul>
+    <ul>
+      <li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/main_top_3.png?v=1639141246" width="50" height="50" loading="lazy"></li>
+      <li class="main_top_bold">Battery</li>
+      <li class="main_top_light">48V/10A Li-ion Battery on frame for better weight distribution</li>
+    </ul>
+    <ul>
+      <li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/main_top_4.png?v=1639141246" width="50" height="50" loading="lazy"></li>
+      <li class="main_top_bold">Pedal Level</li>
+      <li class="main_top_light">Variable  speed levels from level 1 to level 5 to provide a smoother assistance</li>
+    </ul>
+  </div>
+
+  <div id="main_banner_id" class="main_banner">
+    <img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/main02.jpg?v=1639139002" class="main_banner_img" width="1500" height="800" loading="lazy">
+    <div class="main_banner_name">FOLDING OX</div>
+    <div class="main_banner_f1">Cycling with Stability.</div>
+    <div class="main_banner_f2">Who says fat tire e-bike have to be heavy and bulky? A small yet wide wheel allows you to get where you want to go safely while an easy-to-fold design makes it convenient to take the electric bike - Folding OX with you wherever you go. It truly makes cycling a viable option every day!</div>
+  </div>
+
+  
+
+  <div id="performance">
+    <div class="tabRoundCorner"><ul><li></li></ul></div>
+    <div class="bigMenuStyle" >Performance</div>
+    <div class="performance_desc">Exploring around town quickly and easily can be both fun and safe. Its powerful rear hub geared brushless motor meshes seamlessly with Shimano gears to make easy work of any journey. A reliable mechanical disc brake ensures you can stop in all weather with low maintenance.</div>
+		<div class="performance_main_desc">
+      <div>
+        <ul><li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-00.png?v=1639133555" width="800" height="800"></li></ul>
+        <ul class="perf_margin_top">
+          <li id="gearHub" class="perf_big">1W</li>
+          <li class="perf_bold">Geared Hub Motor</li>
+          <li id="milesPerCharge" class="perf_big">22+</li>
+          <li class="perf_bold">Miles per Charge</li>
+          <li id="maxTorque" class="perf_big">52Nm</li>
+          <li class="perf_bold">Max Torque</li>
+          <li id="perdalAssLevel" class="perf_big">5</li>
+          <li class="perf_bold">Pedal Assist Levels</li>
+        </ul>
+      </div>
+    </div>
+    <div id="perf_wrapper">
+			<div id="perf_imgSlid">
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-01.jpg?v=1639133554" width="450" height="300"></li>
+						<li class="titleStyle">Rear Geared Motor</li>
+						<li>Rear hub motor delivers up to 500W of peak power and 52Nm torque ensuring controlled acceleration.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-02.jpg?v=1639133554" width="450" height="300"></li>
+						<li class="titleStyle">Pedal Assist System</li>
+						<li>The pedal assist system gives you power with each pedal stroke. 5 levels at your disposal to help getting where you want to go.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-03.jpg?v=1639133554" width="450" height="300"></li>
+						<li class="titleStyle">Li-ion Battery</li>
+						<li>Located on the down tube of the eBike for better weight distribution. Delivers a range on a single charge up to 22 miles.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-04.jpg?v=1639133555" width="450" height="300"></li>
+						<li class="titleStyle">LCD Display</li>
+						<li>The LCD screen gives you all the information you care about before next exploration with peace of mind.</li>
+					</ul>
+				</div>
+        <div class="item">
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/0614/0490/5716/files/Performance-05.jpg?v=1639133555" width="450" height="300"></li>
+						<li class="titleStyle">Mechanical Disc Brake</li>
+						<li>A wire cable from the lever to the calliper to activate the disc-brake. Reliable stopping power provided by Shimano, perfect for both wet and dry conditions.</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div id="perf_ctlBtn1"><i class="fas fa-circle" id="perf_prevBtn1"></i><i class="fas fa-circle" id="perf_nextBtn1"></i></div>
+		<div id="perf_ctlBtn2"><i class="fas fa-chevron-left" id="perf_prevBtn2"></i><i class="fas fa-chevron-right" id="perf_nextBtn2"></i></div>
+	</div>
+
 
   <div id="flexibility">
     <div class="tabRoundCorner"><ul><li></li></ul></div>
@@ -536,7 +632,7 @@
   <div id="product_main">
     <div class="roundCorner"></div>
     <div class="bigMenuStyle" >Specification</div>
-    <div id="product_main_spe_Tech_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Tech_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Technology</div>
     </div>
@@ -558,7 +654,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Frame_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Frame_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Frame</div>
     </div>
@@ -576,7 +672,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Components_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Components_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Components</div>
     </div>
@@ -598,7 +694,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Drivetrain_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Drivetrain_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Drivetrain</div>
     </div>
@@ -624,7 +720,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Wheels_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Wheels_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Wheels</div>
     </div>
@@ -644,7 +740,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Accessories_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Accessories_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Accessories</div>
     </div>
@@ -660,7 +756,7 @@
       </ul>
     </div>
 
-    <div id="product_main_spe_Weight_Menu" onclick="speToggleMain(this.id)" style="cursor: pointer;">
+    <div id="product_main_spe_Weight_Menu" onclick="speToggleMain(this.id)" class="detail_menu_style">
       <div class="add"></div>
       <div class="speMenu">Weight</div>
     </div>
