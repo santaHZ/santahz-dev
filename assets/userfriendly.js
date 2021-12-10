@@ -23,7 +23,7 @@ nextBtn1.addEventListener('click', ()=>{
 	imgSlide.style.transition = "transform 0.4s ease-in-out";
 	counter ++;
 	//console.log(counter);
-	console.log(size);
+	//console.log(size);
 	imgSlide.style.transform = 'translateX(' + (-size * counter ) + 'px)';
 
 	nextBtn1.style.color = "rgb(66, 64, 64)";
@@ -38,7 +38,7 @@ prevBtn1.addEventListener('click', ()=>{
 	imgSlide.style.transition = "transform 0.4s ease-in-out";
 	counter --;
 	//console.log(counter);
-	console.log(size);
+	//console.log(size);
 	imgSlide.style.transform = 'translateX(' + (-size * counter ) + 'px)';
 
 	nextBtn1.style.color = "#ddd";
@@ -54,7 +54,7 @@ nextBtn2.addEventListener('click', ()=>{
 	imgSlide.style.transition = "transform 0.4s ease-in-out";
 	counter ++;
 	//console.log(counter);
-	console.log(size);
+	//console.log(size);
 	imgSlide.style.transform = 'translateX(' + (-size * counter ) + 'px)';
 
 	nextBtn1.style.color = "rgb(66, 64, 64)";
@@ -68,7 +68,7 @@ prevBtn2.addEventListener('click', ()=>{
 	imgSlide.style.transition = "transform 0.4s ease-in-out";
 	counter --;
 	//console.log(counter);
-	console.log(size);
+	//console.log(size);
 	imgSlide.style.transform = 'translateX(' + (-size * counter ) + 'px)';
 
 	nextBtn1.style.color = "#ddd";

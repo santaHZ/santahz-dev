@@ -1,41 +1,41 @@
-#userfriendly {
+#flexibility {
     position: relative;
     padding: 0px;
     margin: 0px;
     margin-left: 10px;
     width: 1500px;
-    height: 760px;
+    height: 820px;
     margin-bottom: 100px;
 }
 
-#userfly-wrapper{
+#flex_wrapper{
     padding: 0px;
     margin: 0px;
     width: 1500px;
-    height: 460px;
+    height: 480px;
     border: 0px;
     overflow: hidden;
     white-space: nowrap;
 }
 
-#imgSlid{
+#flex_imgSlid{
     padding: 0px;
     margin: 0px;
     display: flex;
 }
 
-#imgSlid .item{
+#flex_imgSlid .item{
     padding: 0px;
     margin-right: 50px;
     width: 450px;
-    height: 460px;
+    height: 480px;
     border: 0px solid #ff23ff;
     text-align: center;
     background-color: #ffffff;
     /* display: inline-block; */
 }
 
-#imgSlid .item ul{
+#flex_imgSlid .item ul{
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -43,7 +43,7 @@
     display: block;
 }
 
-#imgSlid .item ul li{
+#flex_imgSlid .item ul li{
     padding: 0px;
     margin: 0px;
     position: relative;
@@ -54,7 +54,7 @@
     
 }
 
-#imgSlid .item ul .titleStyle{
+#flex_imgSlid .item ul .titleStyle{
     padding: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -69,13 +69,13 @@
     
 }
 
-#imgSlid .item ul li img{
+#flex_imgSlid .item ul li img{
     padding: 0px;
     margin: 0px;
     border: 0px;
 }
 
-#prevBtn1{
+#flex_prevBtn1{
     width: 10px;
     height: 10px;
     position: relative;
@@ -86,22 +86,22 @@
     color: #ddd;
     cursor: pointer;
 }
-#prevBtn1:hover{
+#flex_prevBtn1:hover{
     color: rgb(66, 64, 64);
 }
 
-#nextBtn1{
+#flex_nextBtn1{
     position: relative;
     padding-top: 20px;
     font-size: 2px;
     color: #ddd;
     cursor: pointer;
 }
-#nextBtn1:hover{
+#flex_nextBtn1:hover{
     color: rgb(66,64,64);
 }
 
-#prevBtn2{
+#flex_prevBtn2{
     width: 10px;
     height: 10px;
     position: relative;
@@ -111,22 +111,22 @@
     color: #ddd;
     cursor: pointer;
 }
-#prevBtn2:hover{
+#flex_prevBtn2:hover{
     color: rgb(66, 64, 64);
 }
 
-#nextBtn2{
+#flex_nextBtn2{
     position: relative;
     font-size: 30px;
     padding-top: 10px;
     color: #ddd;
     cursor: pointer;
 }
-#nextBtn2:hover{
+#flex_nextBtn2:hover{
     color: rgb(66,64,64);
 }
 
-#ctlBtn1{
+#flex_ctlBtn1{
     padding: 0px;
     margin: 0px;
     width: 30px;
@@ -134,7 +134,7 @@
     float: left;
 }
 
-#ctlBtn2{
+#flex_ctlBtn2{
     padding: 0px;
     margin: 0px;
     width: 60px;
@@ -142,7 +142,7 @@
     float: right;
 }
 
-.userfriendly-desc{
+.flexibility_desc{
     padding-left: 5px;
     width: 600px;
     font-size: 18px;
