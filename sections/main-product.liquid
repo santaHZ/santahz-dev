@@ -10,10 +10,15 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'product-main.css' | asset_url }}" type="text/css">
 <link rel="stylesheet" href="{{ 'tabBtn.css' | asset_url }}" type="text/css">
+<link rel="stylesheet" href="{{ 'userfriendly.css' | asset_url }}" type="text/css">
+
+<script src="https://kit.fontawesome.com/c9849960bd.js" crossorigin="anonymous" defer="defer"></script>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'product_main.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-main.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'tabBtn.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'userfriendly.js' | asset_url }}" defer="defer"></script>
+
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
@@ -369,6 +374,46 @@
       </div>
     </div>
   </div>
+
+  <div id="userfriendly">
+    <div class="tabRoundCorner"><ul><li></li></ul></div>
+    <div class="bigMenuStyle" >User-Friendly</div>
+    <div class="userfriendly-desc">Sometimes the simplest solution brings the most comfort. Comfortable suspension, intuitive twist grip throttle and cushy saddle are all standard.</div>
+		<div id="userfly-wrapper">
+			<div id="imgSlid">
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopifycdn.net/s/files/1/0614/0490/5716/files/user-friendly-01.jpg?v=1639123249" width="450" height="300"></li>
+						<li class="titleStyle">Hi-Rise Handlebar 01</li>
+						<li>The position of the hi-rise handlebar put your wrists and back in the most natural position while riding.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopifycdn.net/s/files/1/0614/0490/5716/files/user-friendly-02.jpg?v=1639123265" width="450" height="300"></li>
+						<li class="titleStyle">Hi-Rise Handlebar 02</li>
+						<li>The position of the hi-rise handlebar put your wrists and back in the most natural position while riding.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopifycdn.net/s/files/1/0614/0490/5716/files/user-friendly-03.jpg?v=1639123278" width="450" height="300"></li>
+						<li class="titleStyle">Hi-Rise Handlebar</li>
+						<li>The position of the hi-rise handlebar put your wrists and back in the most natural position while riding.</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li><img src="https://cdn.shopifycdn.net/s/files/1/0614/0490/5716/files/user-friendly-04.jpg?v=1639123289" width="450" height="300"></li>
+						<li class="titleStyle">Hi-Rise Handlebar</li>
+						<li>The position of the hi-rise handlebar put your wrists and back in the most natural position while riding.</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div id="ctlBtn1"><i class="fas fa-circle" id="prevBtn1"></i><i class="fas fa-circle" id="nextBtn1"></i></div>
+		<div id="ctlBtn2"><i class="fas fa-chevron-left" id="prevBtn2"></i><i class="fas fa-chevron-right" id="nextBtn2"></i></div>
+	</div>
 
   <div id="tabBtnBlock" style="height: 800px;">
     <div class="tabRoundCorner"><ul><li></li></ul></div>

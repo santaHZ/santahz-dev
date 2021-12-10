@@ -98,7 +98,7 @@
     background-color:rgb(214, 216, 215);
 }
 
-#tabBtnBlock .tabRoundCorner{
+.tabRoundCorner{
     color:white;
     text-align: center;
     border: 0px solid #a1a1a1;
